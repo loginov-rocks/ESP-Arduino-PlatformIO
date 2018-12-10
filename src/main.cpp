@@ -1,16 +1,21 @@
 #include <Arduino.h>
 
-#define LED D0
+#include <ESP8266WiFi.h>
+
+#include <DNSServer.h>
+#include <ESP8266WebServer.h>
+#include <WiFiManager.h>
 
 void setup()
 {
-  pinMode(LED, OUTPUT);
+  Serial.begin(9600);
+  WiFiManager wifiManager;
+  wifiManager.autoConnect("NodeMCU-Arduino-PlatformIO");
+  Serial.println("Connected!");
 }
 
 void loop()
 {
-  digitalWrite(LED, LOW);
-  delay(500);
-  digitalWrite(LED, HIGH);
+  Serial.println("Idle...");
   delay(1000);
 }
