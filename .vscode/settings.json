@@ -1,0 +1,6 @@
+{
+    "terminal.integrated.env.windows": {
+        "PATH": "C:\\Users\\login\\.platformio\\penv\\Scripts;C:\\Users\\login\\.platformio\\penv;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Tools\\nvm;C:\\Tools\\nodejs;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\PuTTY\\;C:\\Users\\login\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Tools\\nvm;C:\\Tools\\nodejs;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Tools\\nvm;C:\\Tools\\nodejs;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\PuTTY\\;C:\\Users\\login\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Tools\\nvm;C:\\Tools\\nodejs",
+        "PLATFORMIO_CALLER": "vscode"
+    }
+}
