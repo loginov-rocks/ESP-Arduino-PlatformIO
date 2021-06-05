@@ -5,5 +5,6 @@ Quick start with NodeMCU v3 (ESP8266), Arduino ecosystem, and PlatformIO IDE:
 
 ## Gists
 
-1. https://gist.github.com/loginov-rocks/7f5b4778de4d8a35a2a8f0de3606be0f
-2. https://gist.github.com/loginov-rocks/f282858d6b505ced501a0a57bb390374
+* Quick start with NodeMCU v3 (ESP8266), Arduino ecosystem, and PlatformIO IDE
+    * [Blink](https://gist.github.com/loginov-rocks/7f5b4778de4d8a35a2a8f0de3606be0f)
+    * [Wi-Fi](https://gist.github.com/loginov-rocks/f282858d6b505ced501a0a57bb390374)
