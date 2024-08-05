@@ -1,9 +1,43 @@
 #include <Arduino.h>
 
+// Uncomment the following line and comment the line after it to use the
+// simpleConnect() function instead of the managerConnect().
+// #include <ESP8266WiFi.h>
 #include <WiFiManager.h>
 
-// Uncomment lines referencing LED instead of lines referencing LED_BUILTIN in case you don't have built-in LED.
+// Uncomment lines referencing LED instead of lines referencing LED_BUILTIN if
+// your development board does not have a built-in LED.
 // #define LED D0
+
+// Set SSID and password to use the simpleConnect() function.
+const char ssid[] = "ssid";
+const char password[] = "password";
+
+void simpleConnect()
+{
+  Serial.print("Using SSID \"");
+  Serial.print(ssid);
+  Serial.print("\" and password \"");
+  Serial.print(password);
+  Serial.print("\".");
+
+  WiFi.begin(ssid, password);
+
+  while (WiFi.status() != WL_CONNECTED)
+  {
+    delay(500);
+    Serial.print('.');
+  }
+
+  Serial.println();
+}
+
+void managerConnect()
+{
+  // Comment the following lines to use the simpleConnect() function.
+  WiFiManager wifiManager;
+  wifiManager.autoConnect("ESP8266-Arduino-PlatformIO");
+}
 
 void setup()
 {
@@ -11,9 +45,16 @@ void setup()
   // pinMode(LED, OUTPUT);
 
   Serial.begin(115200);
-  WiFiManager wifiManager;
-  wifiManager.autoConnect("ESP8266-Arduino-PlatformIO");
-  Serial.println("Connected!");
+
+  Serial.println("Connecting to Wi-Fi...");
+
+  // Uncomment the following line and comment the line after it to use the
+  // simpleConnect() function instead of the managerConnect().
+  // simpleConnect();
+  managerConnect();
+
+  Serial.print("Successfully connected to Wi-Fi with the local IP address: ");
+  Serial.println(WiFi.localIP());
 }
 
 void loop()
