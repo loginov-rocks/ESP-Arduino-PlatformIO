@@ -1,8 +1,10 @@
 #include <Arduino.h>
 
-// Uncomment the following line and comment the line after it to use the
-// simpleConnect() function instead of the managerConnect().
-// #include <ESP8266WiFi.h>
+// Uncomment one of the following lines corresponding to your board and comment
+// the <WiFiManager.h> line to use the simpleConnect() function instead of the
+// managerConnect().
+// #include <ESP8266WiFi.h> // for ESP8266 boards
+// #include <WiFi.h> // for ESP32 boards
 #include <WiFiManager.h>
 
 // Uncomment lines referencing LED instead of lines referencing LED_BUILTIN if
@@ -59,7 +61,8 @@ void setup()
 
 void loop()
 {
-  // Note: NodeMCU built-in LED turns on when the pin is set to LOW.
+  // Note: NodeMCU and WEMOS LOLIN D1 mini built-in LED turns on when the pin
+  // is set to LOW.
   digitalWrite(LED_BUILTIN, LOW);
   // digitalWrite(LED, HIGH);
   Serial.print("Blinking...");
@@ -68,5 +71,5 @@ void loop()
   Serial.println(" done!");
   digitalWrite(LED_BUILTIN, HIGH);
   // digitalWrite(LED, LOW);
-  delay(1000);
+  delay(2000);
 }
