@@ -38,7 +38,7 @@ void managerConnect()
 {
   // Comment the following lines to use the simpleConnect() function.
   WiFiManager wifiManager;
-  wifiManager.autoConnect("ESP8266-Arduino-PlatformIO");
+  wifiManager.autoConnect("ESP-Arduino-PlatformIO");
 }
 
 void setup()
